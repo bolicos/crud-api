@@ -20,7 +20,7 @@ public class DragonService {
         return List.of();
     }
 
-    public Dragon delete(Dragon dragon) {
+    public Dragon delete(UUID id) {
         return null;
     }
 
