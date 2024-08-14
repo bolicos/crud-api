@@ -1,0 +1,10 @@
+package br.bolicos.api.dragons.core.shared;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.NoRepositoryBean;
+
+import java.util.UUID;
+
+@NoRepositoryBean
+public interface DefaultRepository<D> extends JpaRepository<D, UUID> {
+}
