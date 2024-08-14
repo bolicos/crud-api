@@ -1,13 +1,13 @@
-package br.bolicos.crud_api;
+package br.bolicos.api.dragons;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrudApiApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrudApiApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
