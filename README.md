@@ -100,4 +100,4 @@ components and extensions. It's available as part of [VMware Tanzu Platform](htt
 - Linkedin - [Perfil](https://linkedin.com/in/bolicos)
 
 ## License
-Dragons API is licensed under the [MIT licensed](LICENSE).
+Dragons API is licensed under the [MIT licensed](https://github.com/bolicos/dragons-api/tree/develop?tab=License-1-ov-file).
