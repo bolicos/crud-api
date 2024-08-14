@@ -1,10 +1,10 @@
-package br.bolicos.crud_api;
+package br.bolicos.api.dragons;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CrudApiApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
