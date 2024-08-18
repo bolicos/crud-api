@@ -93,6 +93,11 @@ public class Dragon {
             return this;
         }
 
+        public Builder omitId() {
+            this.id = null;
+            return this;
+        }
+
         public Dragon build() {
             return new Dragon(this);
         }
