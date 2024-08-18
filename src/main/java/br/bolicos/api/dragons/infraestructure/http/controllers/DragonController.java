@@ -2,6 +2,7 @@ package br.bolicos.api.dragons.infraestructure.http.controllers;
 
 import br.bolicos.api.dragons.application.usecases.DragonService;
 import br.bolicos.api.dragons.infraestructure.http.dtos.DragonDTO;
+import br.bolicos.api.dragons.infraestructure.http.dtos.DragonDTOWithoutId;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,16 +22,16 @@ import java.util.UUID;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/api/dragons")
+@RequestMapping("/dragons")
 public class DragonController {
     private DragonService dragonService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Mono<DragonDTO> createDragon(@RequestBody DragonDTO dto) {
-        var dragon = dragonService.create(null);
+    public Mono<DragonDTO> createDragon(@RequestBody DragonDTOWithoutId dto) {
+        var dragon = dragonService.create(dto.toDomain());
 
-        return Mono.empty();
+        return Mono.just(DragonDTO.toDTO(dragon));
     }
 
     @GetMapping("/{id}")
@@ -38,23 +39,25 @@ public class DragonController {
     public Mono<DragonDTO> getDragon(@PathVariable UUID id) {
         var dragon = dragonService.get(id);
 
-        return Mono.empty();
+        return Mono.just(DragonDTO.toDTO(dragon));
     }
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public Flux<DragonDTO> getAllDragons() {
         var dragons = dragonService.getAll();
+        var dragonsDTOs = dragons.stream().map(DragonDTO::toDTO);
 
-        return Flux.empty();
+        return Flux.fromStream(dragonsDTOs);
     }
 
     @GetMapping("/byKingdom")
     @ResponseStatus(HttpStatus.OK)
     public Flux<DragonDTO> getDragonsByKingdom(@RequestParam UUID kingdomId) {
         var dragons = dragonService.getByKingdom(kingdomId);
+        var dragonsDTOs = dragons.stream().map(DragonDTO::toDTO);
 
-        return Flux.empty();
+        return Flux.fromStream(dragonsDTOs);
     }
 
     @DeleteMapping("/{id}")
@@ -65,9 +68,9 @@ public class DragonController {
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Mono<DragonDTO> createDragon(@PathVariable UUID id, @RequestBody DragonDTO dto) {
-        var dragon = dragonService.update(null, null);
+    public Mono<DragonDTO> updateDragon(@PathVariable UUID id, @RequestBody DragonDTO dto) {
+        var dragon = dragonService.update(id, dto.toDomain());
 
-        return Mono.empty();
+        return Mono.just(DragonDTO.toDTO(dragon));
     }
 }

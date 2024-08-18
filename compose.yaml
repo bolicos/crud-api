@@ -7,6 +7,6 @@ services:
     environment:
       - 'POSTGRES_DB=dragons'
       - 'POSTGRES_PASSWORD=root'
-      - 'POSTGRES_USER=app'
+      - 'POSTGRES_USER=toothless'
     ports:
       - '5432:5432'
