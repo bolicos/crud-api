@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://spring.io/" target="blank"><img src="./docs/img/logo-small.svg" width="200" alt="Spring Logo" /></a>
+  <a href="https://spring.io/" target="blank"><img src="./docs/img/spring.png" width="200" alt="Spring Logo" /></a>
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@ Spring’s focus on speed, simplicity, and productivity has made it the <a href=
 <a target="_blank" href="https://github.com/bolicos/dragons-api/issues"><img src='https://img.shields.io/github/issues/bolicos/dragons-api.svg' alt='open issues badge' /></a>
 <a target="_blank" href="https://github.com/bolicos/dragons-api/pulls"><img src='https://img.shields.io/github/issues-pr/bolicos/dragons-api.svg' alt='open pull requests badge' /></a>
 <a target="_blank" href="https://github.com/bolicos/dragons-api"><img src='https://img.shields.io/github/languages/top/bolicos/dragons-api.svg' alt='top language' /></a>
-<a target="_blank" href="https://github.com/bolicos/dragons-api"><img src='https://img.shields.io/github/license/bolicos/dragons-api.svg' alt='github license' /></a>
+<a target="_blank" href="hhttps://github.com/bolicos/dragons-api/tree/develop?tab=License-1-ov-file"><img src='https://img.shields.io/github/license/bolicos/dragons-api.svg' alt='github license' /></a>
 <a target="_blank" href="https://github.com/bolicos/dragons-api"><img src='https://img.shields.io/github/languages/code-size/bolicos/dragons-api.svg' alt='code size in bytes' /></a>
 <a target="_blank" href="https://github.com/bolicos/dragons-api"><img src='https://img.shields.io/github/repo-size/bolicos/dragons-api.svg' alt='repo size' /></a>
 </p>
