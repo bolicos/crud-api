@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://spring.io/" target="blank"><img src="./docs/img/logo-small.svg" width="200" alt="Spring Logo" /></a>
+  <a href="https://spring.io/" target="blank"><img src="./docs/img/spring.png" width="200" alt="Spring Logo" /></a>
 </p>
 
 <p align="center">
