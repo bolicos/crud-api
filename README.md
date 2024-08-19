@@ -60,26 +60,29 @@ You can run the Dragons API in different modes:
 
 ```bash
 # development mode
-./gradlew bootRun
-
-# docker mode
-docker build -t image_name/app_name:latest .
+./gradlew bootRun --args='--spring.profiles.active=local'
 
 # production mode
-./gradlew bootRun
+./gradlew bootRun--args='--spring.profiles.active=prod'
+
+# docker mode
+docker build -t bolicos/dragons-ap:latest .
 ```
 
 ## Testing
 Dragons API comes with comprehensive test coverage. Use the following commands to run tests:
 
 ```bash
-# run unit tests:
+# run all tests:
 ./gradlew test
 
-# run end-to-end (e2e) tests:
-./gradlew test:e2e
+# run unit tests:
+./gradlew unitTest
 
-# check test coverage:
+# run end-to-end (e2e) tests:
+./gradlew integrationTest
+
+# check all test coverage:
 ./gradlew test:coverage
 ```
 
