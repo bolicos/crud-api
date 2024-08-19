@@ -1,13 +1,13 @@
-<p align="center">
+<p style="text-align: center;">
   <a href="https://spring.io/" target="blank"><img src="./docs/img/spring-2.svg" width="400" alt="Spring Logo" /></a>
 </p>
 
-<p align="center">
+<p style="text-align: center;">
 Spring makes programming Java quicker, easier, and safer for everybody.
 Spring’s focus on speed, simplicity, and productivity has made it the <a href="https://spring.io/why-spring" target="_blank">world's most popular</a> Java framework.
 </p>
 
-<p align="center">
+<p style="text-align: center;">
 <a target="_blank" href="https://github.com/bolicos/dragons-api/actions"><img src='https://github.com/bolicos/dragons-api/workflows/pipeline/badge.svg' alt="coverage badge" /></a>
 <a target="_blank" href="https://github.com/bolicos/dragons-api/tags"><img src='https://img.shields.io/github/tag/bolicos/dragons-api.svg' alt='latest semver version' /></a>
 <a target="_blank" href="https://github.com/bolicos/dragons-api/issues"><img src='https://img.shields.io/github/issues/bolicos/dragons-api.svg' alt='open issues badge' /></a>
@@ -19,12 +19,15 @@ Spring’s focus on speed, simplicity, and productivity has made it the <a href=
 </p>
 
 [//]: # (<img alt="GitHub branch check runs" src="https://img.shields.io/github/check-runs/bolicos/dragons-api/master">)
+
 [//]: # (<img alt="GitHub deployments" src="https://img.shields.io/github/deployments/bolicos/dragons-api/assembly-dev">)
+
 [//]: # (<img alt="Docker Image Size" src="https://img.shields.io/docker/image-size/bolicos/dragons-api">)
 
 ---
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
@@ -38,10 +41,13 @@ Spring’s focus on speed, simplicity, and productivity has made it the <a href=
 ---
 
 ## Introduction
+
 [Dragons API](https://github.com/bolicos/dragons-api) is a Java project built with the Spring Boot framework.
-It serves as an example of an API repository, demonstrating best practices in API development using modern Java technologies.
+It serves as an example of an API repository, demonstrating best practices in API development using modern Java
+technologies.
 
 ## Installation
+
 To get started with Dragons API, follow these steps:
 
 ```bash
@@ -56,6 +62,7 @@ cd dragons-api
 ```
 
 ## Running the application
+
 You can run the Dragons API in different modes:
 
 ```bash
@@ -66,10 +73,11 @@ You can run the Dragons API in different modes:
 ./gradlew bootRun--args='--spring.profiles.active=prod'
 
 # docker mode
-docker build -t bolicos/dragons-ap:latest .
+docker build -t bolicos/dragons-api:latest .
 ```
 
 ## Testing
+
 Dragons API comes with comprehensive test coverage. Use the following commands to run tests:
 
 ```bash
@@ -82,25 +90,32 @@ Dragons API comes with comprehensive test coverage. Use the following commands t
 # run end-to-end (e2e) tests:
 ./gradlew integrationTest
 
-# check all test coverage:
-./gradlew test:coverage
+# check test coverage:
+# After running the tests, you can view the coverage report by opening the file at /build/reports/jacoco/test/html/index.html.
+./gradlew jacocoTestReport
 ```
 
 ## Documentation
+
 API documentation is available through Swagger OpenAPI.
 Access it by clicking [here](http://localhost:8000/api/docs) to explore the available endpoints.
 
 ## Environment Configuration
+
 An example of the `.properties` file is provided within the project to help you configure your environment.
 
 ## Support
-Top-tier support for Spring, Apache Tomcat®, and Java OpenJDK™, along with exclusive enterprise-ready features, 
+
+Top-tier support for Spring, Apache Tomcat®, and Java OpenJDK™, along with exclusive enterprise-ready features,
 components and extensions. It's available as part of [VMware Tanzu Platform](https://spring.io/support).
 
 ## Stay in touch
+
 - Author - [Bolicos](https://github.com/bolicos)
 - Website - [Linktree](https://linktr.ee/bolicos)
 - Linkedin - [Perfil](https://linkedin.com/in/bolicos)
 
 ## License
-Dragons API is licensed under the [MIT licensed](https://github.com/bolicos/dragons-api/tree/develop?tab=License-1-ov-file).
+
+Dragons API is licensed under
+the [MIT licensed](https://github.com/bolicos/dragons-api/tree/develop?tab=License-1-ov-file).
