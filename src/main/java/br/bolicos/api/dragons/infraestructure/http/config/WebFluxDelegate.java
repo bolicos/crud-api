@@ -19,6 +19,8 @@ import org.springframework.web.reactive.config.CorsRegistry;
 import org.springframework.web.reactive.config.PathMatchConfigurer;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
 
+import static br.bolicos.api.dragons.Application.PATH_BASE;
+
 @Configuration
 public class WebFluxDelegate implements WebFluxConfigurer {
 
@@ -64,6 +66,6 @@ public class WebFluxDelegate implements WebFluxConfigurer {
 
     @Override
     public void configurePathMatching(PathMatchConfigurer configurer) {
-        configurer.addPathPrefix("/api", HandlerTypePredicate.forAnnotation(RestController.class));
+        configurer.addPathPrefix(PATH_BASE, HandlerTypePredicate.forAnnotation(RestController.class));
     }
 }
