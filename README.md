@@ -1,4 +1,4 @@
-<p text-align="center">
+<p align="center">
   <a href="https://spring.io/" target="blank"><img src="./docs/img/spring-2.svg" width="400" alt="Spring Logo" /></a>
 </p>
 
